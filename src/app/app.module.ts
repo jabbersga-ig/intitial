@@ -4,29 +4,29 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { IgxIconModule, IgxAvatarModule, IgxButtonModule, IgxListModule, IgxInputGroupModule, IgxSelectModule } from 'igniteui-angular';
+import { TeamCollaborationComponent } from './team-collaboration/team-collaboration.component';
+import { IgxAvatarModule, IgxIconModule, IgxNavigationDrawerModule, IgxListModule, IgxButtonModule, IgxGridModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
-import { MyInfoComponent } from './my-info/my-info.component';
+import { MasterViewComponent } from './master-view/master-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    MyInfoComponent
+    TeamCollaborationComponent,
+    MasterViewComponent
   ],
   imports: [
     BrowserModule,
     HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxIconModule,
     IgxAvatarModule,
-    IgxButtonModule,
+    IgxIconModule,
+    IgxNavigationDrawerModule,
     IgxListModule,
-    FormsModule,
-    IgxInputGroupModule,
-    IgxSelectModule
+    IgxButtonModule,
+    IgxGridModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

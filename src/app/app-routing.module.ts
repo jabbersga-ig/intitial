@@ -4,14 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
-import { HomeComponent } from './home/home.component';
-import { MyInfoComponent } from './my-info/my-info.component';
+import { TeamCollaborationComponent } from './team-collaboration/team-collaboration.component';
+import { MasterViewComponent } from './master-view/master-view.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'team-collaboration', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: 'home', component: HomeComponent, data: { text: 'Home' } },
-  { path: 'my-info', component: MyInfoComponent, data: { text: 'My Info' } },
+  { path: 'team-collaboration', component: TeamCollaborationComponent, data: { text: 'Team Collaboration' } },
+  { path: 'master-view', component: MasterViewComponent, data: { text: 'Master View' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

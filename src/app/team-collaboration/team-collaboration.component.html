@@ -1,0 +1,141 @@
+<div class="column-layout_5 column">
+  <div class="row-layout_4 row">
+    <div class="row-layout_3 row">
+      <div class="column-layout column">
+        <div class="row-layout_5 row">
+          <div class="row-layout_1 row">
+            <igx-avatar [roundShape]="true" color="var(--igx-grays-800)" bgColor="var(--igx-grays-400)" initials="NA" size="small" class="avatar"></igx-avatar>
+          </div>
+          <div class="row-layout row">
+            <h5 class="text">Home</h5>
+            <igx-icon font="material" [active]="true" class="user-input icon_1">keyboard_arrow_down</igx-icon>
+          </div>
+        </div>
+      </div>
+      <div class="column-layout_1 column">
+        <igx-avatar [roundShape]="true" color="var(--igx-grays-800)" bgColor="var(--igx-grays-400)" initials="NA" size="small" class="avatar"></igx-avatar>
+        <igx-icon font="material" [active]="true" class="icon">notifications</igx-icon>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout_2 row">
+    <igx-nav-drawer width="320px" [pin]="true" [pinThreshold]="1024" position="left" [isOpen]="false" class="nav-drawer">
+      <ng-template igxDrawer>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">view_carousel</igx-icon>
+          <span class="navigation-drawer">Title goes here</span>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">trending_up</igx-icon>
+          <span class="navigation-drawer">Title goes here</span>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">check_box</igx-icon>
+          <span class="navigation-drawer">Title goes here</span>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">folder</igx-icon>
+          <span class="navigation-drawer">Title goes here</span>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">poll</igx-icon>
+          <span class="navigation-drawer">Title goes here</span>
+        </span>
+      </ng-template>
+      <ng-template igxDrawerMini>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">view_carousel</igx-icon>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">trending_up</igx-icon>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">check_box</igx-icon>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">folder</igx-icon>
+        </span>
+        <span [isHeader]="false" igxDrawerItem>
+          <igx-icon font="material" [active]="true">poll</igx-icon>
+        </span>
+      </ng-template>
+    </igx-nav-drawer>
+    <div class="column-layout_8 column">
+      <div class="column-layout_6 column">
+        <h6 class="title_1">Tasks</h6>
+        <p class="text_1">My Tasks</p>
+        <p class="igx-typography__subtitle-2 title">LISTS</p>
+        <igx-list class="list_1">
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>General</h4>
+            <igx-icon font="material" [active]="true" igxListAction class="icon_1 icon_2">more_vert</igx-icon>
+          </igx-list-item>
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>App Builder</h4>
+            <igx-icon font="material" [active]="true" igxListAction class="icon_1 icon_2">more_vert</igx-icon>
+          </igx-list-item>
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>Indigo.Design</h4>
+            <igx-icon font="material" [active]="true" igxListAction class="icon_1 icon_2">more_vert</igx-icon>
+          </igx-list-item>
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>Marketing</h4>
+            <igx-icon font="material" [active]="true" igxListAction class="icon_1 icon_2">more_vert</igx-icon>
+          </igx-list-item>
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>Customer Portal</h4>
+            <igx-icon font="material" [active]="true" igxListAction class="icon_1 icon_2">more_vert</igx-icon>
+          </igx-list-item>
+        </igx-list>
+        <button igxButton="flat" [disabled]="false" class="button_3">
+          <igx-icon>add</igx-icon>
+          <span>LIST</span>
+        </button>
+        <p class="igx-typography__subtitle-2 title">FILTERS</p>
+        <igx-list class="list">
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>Due this Week</h4>
+          </igx-list-item>
+          <igx-list-item class="list-item">
+            <h4 igxListLineTitle>Overdue</h4>
+          </igx-list-item>
+        </igx-list>
+        <button igxButton="flat" [disabled]="false" class="button_3">
+          <igx-icon>add</igx-icon>
+          <span>FILTER</span>
+        </button>
+      </div>
+    </div>
+    <div class="column-layout_2 column">
+      <div class="column-layout_7 column">
+        <div class="row-layout_6 row">
+          <div class="column-layout_3 column">
+            <h5 class="title_1">Marketing Related</h5>
+          </div>
+          <div class="column-layout_4 column">
+            <button igxButton="icon" type="icon" [disabled]="false" class="user-input">
+              <igx-icon>more_vert</igx-icon>
+            </button>
+            <button igxButton="flat" [disabled]="false" class="button">
+              <igx-icon>fastfood</igx-icon>
+              <span>FIELDS</span>
+            </button>
+            <button igxButton="flat" [disabled]="false" class="button_1">
+              <igx-icon>dashboard</igx-icon>
+              <span>SECTION</span>
+            </button>
+            <button igxButton="flat" [disabled]="false" class="button_2">
+              <igx-icon>list</igx-icon>
+              <span>LIST</span>
+            </button>
+          </div>
+        </div>
+        <igx-grid [data]="northwindCategories" [autoGenerate]="false" width="93%" height="500px" class="grid">
+          <igx-column field="categoryID" header="categoryID" title="categoryID" dataType="number" class="igx-column"></igx-column>
+          <igx-column field="description" header="description" title="description" dataType="string" class="igx-column"></igx-column>
+          <igx-column field="name" header="name" title="name" dataType="string" class="igx-column"></igx-column>
+        </igx-grid>
+      </div>
+    </div>
+  </div>
+</div>
